@@ -1,15 +1,24 @@
 package section4;
 
+import javax.swing.JOptionPane;
+
 public class QuizGame {
 	
 	public static void main(String[] args) {
 		
 		// 1.  Create a variable to hold the user's score 
-		
+		int score = 0;
 		// 2.  Ask the user a question 
-		
+		String input = JOptionPane.showInputDialog("What is 5 times 5");
 		// 3.  Use an if statement to check if their answer is correct
-		
+		if (input.equalsIgnoreCase("25")) {
+			JOptionPane.showMessageDialog(null, "You got the 1st question correct!");
+			score = score + 1;
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "You got the 1st question Wrong!");
+		}
+		JOptionPane.showMessageDialog(null, "Your score is : " + score);
 		// 4.  if the user's answer was correct, add one to their score 
 		
 		// 5.  Create more questions by repeating steps 1, 2, and 3 below. 

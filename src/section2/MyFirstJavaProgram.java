@@ -17,5 +17,9 @@ public class MyFirstJavaProgram {
 			Kellen.move(200);
 			Kellen.turn(90);
 		}
+		for (int i = 0; i < 4; i++) {
+			Kellen.move(100);
+			Kellen.turn(90);
+		}
 	}
 }
