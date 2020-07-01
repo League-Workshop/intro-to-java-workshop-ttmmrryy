@@ -18,7 +18,28 @@ public class QuizGame {
 		else {
 			JOptionPane.showMessageDialog(null, "You got the 1st question Wrong!");
 		}
-		JOptionPane.showMessageDialog(null, "Your score is : " + score);
+		
+		String input2 = JOptionPane.showInputDialog("What is 8 times 8");
+		
+		if (input2.equalsIgnoreCase("64")) {
+			JOptionPane.showMessageDialog(null, "You got the 2nd question correct!");
+			score = score + 1;
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "You got the 2nd question Wrong!");
+		}
+		
+		
+		String input3 = JOptionPane.showInputDialog("What is 21 times 21");
+		
+		if (input3.equalsIgnoreCase("441")) {
+			JOptionPane.showMessageDialog(null, "You got the 3rd question correct!");
+			score = score + 1;
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "You got the 3rd question Wrong!");
+		}
+		JOptionPane.showMessageDialog(null, "Your score is : " + score + "/3");
 		// 4.  if the user's answer was correct, add one to their score 
 		
 		// 5.  Create more questions by repeating steps 1, 2, and 3 below. 
