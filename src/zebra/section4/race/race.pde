@@ -1,8 +1,8 @@
 //Graphics from pngtree.com https://pngtree.com/
 
 import processing.sound.*;
-SoundFile meow;
-SoundFile woof;
+//SoundFile meow;
+//SoundFile woof;
 PImage cat;
 PImage dog;
 PImage background;
@@ -16,8 +16,8 @@ int dogY = 300;
 void setup() {
   size(1200, 500); 
   textSize(35);
-  meow = new SoundFile(this, "meow.wav");
-  woof = new SoundFile(this, "woof.wav");
+  //meow = new SoundFile(this, "meow.wav");
+  //woof = new SoundFile(this, "woof.wav");
   cat = loadImage("lion.png");
   dog = loadImage("dog.png");
   background = loadImage("space.png");
@@ -61,13 +61,13 @@ void moveDog(){
 void checkForWinner(){
   if (catX>width-60){
     text("CATS ARE THE BEST", 400, 50); 
-    meow.play();
+    //meow.play();
     noLoop();
   }
   
   if (dogX>width-60){
     text("DOGS RULE", 500, 50); 
-    woof.play();
+    //woof.play();
     noLoop();
   }
 }

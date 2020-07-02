@@ -12,6 +12,7 @@ void draw() {
   // 1. ▼ Write code BELOW this line to make stars ▼ 
   //    Example:
   //     circle(50, 50, 50);
+  circle(random(800), random(800), 20);
 
 
 
@@ -27,7 +28,7 @@ void draw() {
   fill(100, 100, 100);
   triangle(rocketX, rocketY + 10, rocketX + 50, rocketY + 100, rocketX - 50, rocketY + 100);
   // 2. ▼ Write code BELOW this line to make the rocket blast off ▼ 
-    
+    rocketY -= 3;
  
 
 
